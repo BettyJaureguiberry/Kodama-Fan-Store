@@ -1,10 +1,15 @@
-//import logo from './logo.svg'; hay que borrarlo, lo dejo de referencia
+
 import './App.css';
+import Navbar from './componentes/Navbar/Navbar';
+import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
+import FormContacto from './componentes/FormContacto/FormContacto';
 
 function App() {
   return (
     <div className="App">
-      hola mundo
+      <Navbar/>
+      <ItemListContainer greeting={'いらっしゃい みなさん！。Bienvenid@s Amig@s!.'}/>
+      <FormContacto/>
     </div>
   );
 }

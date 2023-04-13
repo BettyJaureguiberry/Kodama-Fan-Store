@@ -1,16 +1,35 @@
 import React from 'react'
-import logo2 from './assets/logo2.png'
+import { useState, useEffect} from 'react';
+import { getProductos, getProductosPorCategoria} from '../../asyncmock'
+import ItemList from '../ItemList/ItemList';
+import './ItemListContainer.css'
+import { useParams } from 'react-router-dom'
 
-const ItemListContainer = ({greeting}) => {
-    
+
+
+const ItemListContainer = () => {
+    const [productos, setProductos] = useState([]);
+
+    const {idCategoria}=useParams();
+
+
+    useEffect(() => {
+
+        const funcionProductos = idCategoria ? getProductosPorCategoria : getProductos;
+
+
+        funcionProductos(idCategoria)
+            .then(res => setProductos(res))
+            .catch(error => console.error(error))
+    }, [idCategoria])
+
     return (
-        
-        <div className="card" style={{ width: '15rem' }}>
-            <img src={logo2} className="card-img-top" alt="logo Kodama" />
-            <div className="card-body">
-                <p className="card-text">{greeting}</p>
-            </div>
+        <div className="" >
+            
+            <ItemList productos={productos} />
         </div>
+
+
     );
 
 

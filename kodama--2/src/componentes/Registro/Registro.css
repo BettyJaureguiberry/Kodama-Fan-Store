@@ -1,0 +1,12 @@
+.contenedorForm{
+display:grid;
+grid-template-columns: 1fr 2fr 2fr;
+   
+}
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+
+}

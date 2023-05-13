@@ -10,7 +10,7 @@ const CartItem = ({ item, cantidad }) => {
     
   return (
 
-    <div className="card text-center mb-3 " style={{ width: '22rem' }}>
+    <div className="card text-center mb-3 " style={{ width: '30rem' }}>
 
       <div className="card-body cardCart">
         <h4 className="card-title"> {item.nombre} </h4>

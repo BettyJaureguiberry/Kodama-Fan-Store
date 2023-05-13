@@ -11,7 +11,11 @@ import Cart from './componentes/Cart/Cart';
 import Checkout from './componentes/Checkout/Checkout';
 import Nosotros from './componentes/Nosotros/Nosotros';
 import LoginUser from './componentes/LoginUser/LoginUser';
-
+import LinkCondicional from './componentes/LinkCondicional/LinkCondicional';
+import Registro from './componentes/Registro/Registro';
+import Usuario from './componentes/Usuario/Usuario';
+import UsuarioLog from './componentes/UsuarioLog/UsuarioLog';
+import { LoginProvider } from './context/LoginContext';
 
 
 
@@ -22,7 +26,7 @@ function App() {
     <>
       <BrowserRouter>
         <CarritoProvider>
-        
+        <LoginProvider>
             <Navbar />
        
             <Routes >
@@ -35,12 +39,12 @@ function App() {
               
               <Route path="*" element={<SitioConstruccion />} />
               <Route path="/Nosotros" element={<Nosotros />} />
-              
+              <Route path="/Registro" element={<Registro />} />
               <Route path="/LoginUser" element={<LoginUser />} />
             </Routes>
            
             <Footer />
-          
+            </LoginProvider>
         </CarritoProvider>
       </BrowserRouter>
 

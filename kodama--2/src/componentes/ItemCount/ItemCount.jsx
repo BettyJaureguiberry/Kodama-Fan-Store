@@ -3,9 +3,8 @@ import { useState, useEffect } from 'react'
 import './ItemCount.css'
 
 
-const ItemCount = ( {stock, inicial}) => {
-    //let inicial = 1;
-    //let maximo = 10;
+const ItemCount = ({ stock, inicial, funcionAgregar }) => {
+
 
     const [contador, setContador] = useState(inicial);
     const incrementar = () => {
@@ -18,17 +17,23 @@ const ItemCount = ( {stock, inicial}) => {
             setContador(contador - 1);
         }
     }
-     const agregarCarrito =() => {
-        console.log (`Se agrego al Carrito ${contador} items`)
-     }
+    const agregarCarrito = () => {
+        console.log(`Se agrego al Carrito ${contador} items`)
+    }
 
     return (
         <>
-             <button type="button" className="btn btn-secondary" onClick={decrementar}>-</button>
-            <strong> {contador}  </strong>
-            <button type="button" className="btn btn-secondary" onClick={incrementar}>+</button>
-            <button type="button" className="btn btn-dark btnCarrito" onClick={agregarCarrito}>Agregar al Carrito</button>
+            {stock == 0 ? <p className='card--p'>No hay stock</p> : (
+                <>
+                    <div>
+                        <button type="button" className="btn btn-secondary" onClick={decrementar}>-</button>
+                        <strong> {contador}  </strong>
+                        <button type="button" className="btn btn-secondary" onClick={incrementar}>+</button>
+                    </div>
+                    <button type="button" className="btn btn-dark btnCarrito" onClick={() => funcionAgregar(contador)}>Agregar al Carrito</button>
 
+                </>
+            )}
         </>
     )
 }

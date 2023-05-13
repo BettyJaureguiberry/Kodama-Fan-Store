@@ -1,0 +1,15 @@
+.cardSumimasen {
+    width: 90rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+     
+    margin: 4.5rem;
+
+
+
+}
+
+.pSumimasen{
+    width: 30rem;
+}

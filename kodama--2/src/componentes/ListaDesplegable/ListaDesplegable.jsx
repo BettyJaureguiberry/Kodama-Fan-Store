@@ -14,26 +14,26 @@ const ListaDesplegable = (props) => {
     return (
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
+                                
                 <div className="nav-item">
-                    <NavLink to={`/categoria/Nosotros`}>
-                    <li className="nav-link" aria-current="page"  onClick={() => handleClick('Nosotros')}>{props.a} </li>
-                    </NavLink>
-                </div>
-                
-                <div className="nav-item">
-                    <NavLink to={`/categoria/4`}>
-                    <li className="nav-link" onClick={() => handleClick('Ofertas')}>{props.a3}</li>
+                    <NavLink to={`/categoria/Ofertas`}>
+                    <li className="nav-link titMenu" onClick={() => handleClick('Ofertas')}>{props.a3}</li>
                     </NavLink>
                 </div>
                 <div className="nav-item">
-                    <NavLink to={`/categoria/3`}>
-                    <li className="nav-link" onClick={() => handleClick('Remeras')}>{props.a4}</li>
+                    <NavLink to={`/categoria/Remeras`}>
+                    <li className="nav-link titMenu" onClick={() => handleClick('Remeras')}>{props.a4}</li>
                     </NavLink>
                 </div>
                 <div className="nav-item">
-                    <NavLink to={`/categoria/2`}>
-                    <li className="nav-link" onClick={() => handleClick('Figuras')}>{props.a5}</li>
+                    <NavLink to={`/categoria/Figuras`}>
+                    <li className="nav-link titMenu" onClick={() => handleClick('Figuras')}>{props.a5}</li>
                     </NavLink>
+                </div>
+                <div className="nav-item">
+                    <Link to={`/Nosotros`}>
+                    <li className="nav-link titMenu" onClick={() => handleClick('')}>Nosotros</li>
+                    </Link>
                 </div>
                 
             </ul>

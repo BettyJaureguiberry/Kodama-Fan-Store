@@ -1,0 +1,45 @@
+.contenedor {
+    display: grid;
+    grid-template-areas:
+    "card text text2"
+    "card text  text2"
+    "redes text  text2";
+
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-column-gap: 1rem;
+
+}
+
+.imgText{
+    width: 50rem;
+}
+.text2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgRedes{
+    width: 1.5rem;
+}
+.redes{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.ig{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.ws{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tiktok{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}

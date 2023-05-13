@@ -2,7 +2,11 @@ Kodama Fan Store
 
 Web App - Ecommerce: Tienda Comic - Manga Café
 
-En la App se puede visualizar diferentes productos dentro del rubro Comic-Anime. Los mismos pueden ser seleccionados y guardados en el Carrito de Compras. Los ítems seleccionados se pueden visualizar e interactuar con los mismos desde el Carrito de Compras. Desde el mismo se puede finalizar la compra. La App tambien cuenta con las opciones de registracion y login de usuarios. Asimismo, también hay un formulario para el envio de consultas.
+En la App se puede visualizar diferentes productos dentro del rubro Comic-Anime. Los mismos pueden ser seleccionados y guardados en el Carrito de Compras. 
+
+Los ítems seleccionados se pueden visualizar e interactuar con los mismos desde el Carrito de Compras. Desde el mismo se puede finalizar la compra. 
+
+La App tambien cuenta con las opciones de registracion y login de usuarios. Asimismo, también hay un formulario para el envio de consultas.
 
 Esta App fue creada como Workshop Final para el curso "React JS" de CoderHouse.
 
